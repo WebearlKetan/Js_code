@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //how to find palindrome in javascript
+        // 121 malayalam madam
+
+        const number= prompt("Enter a number");
+        const reverse = number.split('').reverse().join('');
+        if(number == reverse){
+            document.write(`${number} is palindrome`)
+        }
+        else{
+            document.write(`${number} is not  palindrome`)
+        }
+
+    </script>
+</body>
+</html>

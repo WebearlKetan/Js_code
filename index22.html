@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //how to convert celsius to fahrenheit or vice versa
+        function celsiusToFahrenheit(celsius) {
+            return (celsius * 9 / 5) + 32;
+        }
+
+        const celsius = 25;
+        const fahrenheit = celsiusToFahrenheit(celsius);
+
+        console.log(fahrenheit); // Output: 77
+
+
+
+        
+        function fahrenheitToCelsius(fahrenheit2) {
+            return (fahrenheit2 - 32) * 5 / 9;
+        }
+
+        const fahrenheit2 = 77;
+        const celsius2 = fahrenheitToCelsius(fahrenheit2);
+
+        console.log(celsius2); // Output: 25
+
+
+    </script>
+</body>
+
+</html>

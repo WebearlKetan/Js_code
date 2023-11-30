@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //how to find union of two arrays in javascript 
+        
+        function findUnion(array1, array2) {
+            const unionSet = new Set([...array1, ...array2]);
+            return Array.from(unionSet);
+        }
+
+        const array1 = [1, 2, 3];
+        const array2 = [3, 4, 5];
+
+        const union = findUnion(array1, array2);
+
+        document.write(union); // Output: [1, 2, 3, 4, 5]
+
+    </script>
+</body>
+
+</html>

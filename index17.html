@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //How to find factor of a given integer in javascript
+        const num = prompt (parseInt("Enter a positive number"));
+        
+        if (num > 0) {
+            document.write(`Factors of ${num} are:` + "<br>");
+
+            for (let i = 1; i <= num; i++) {
+                if (num % i === 0) {
+                    document.write(i + "<br>");
+                }
+            }
+        } else if (num === 0) {
+            document.write("The number is 0. It has no factors.");
+        } else {
+            document.write("Invalid input. Please enter a positive number.");
+        }
+
+
+    </script>
+</body>
+
+</html>

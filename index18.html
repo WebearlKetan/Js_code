@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //CALC
+        
+        // Function to perform addition
+        function add(num1, num2) {
+            return num1 + num2;
+        }
+
+        // Function to perform subtraction
+        function subtract(num1, num2) {
+            return num1 - num2;
+        }
+
+        // Function to perform multiplication
+        function multiply(num1, num2) {
+            return num1 * num2;
+        }
+
+        // Function to perform division
+        function divide(num1, num2) {
+            return num1 / num2;
+        }
+
+        // Main calculator function
+        function calculator() {
+            const num1 = parseFloat(prompt("Enter the first number:"));
+            const num2 = parseFloat(prompt("Enter the second number:"));
+            const operator = prompt("Enter the operator (+, -, *, /):");
+
+            let result;
+
+            // Perform calculation based on operator
+            switch (operator) {
+                case "+":
+                    result = add(num1, num2);
+                    break;
+                case "-":
+                    result = subtract(num1, num2);
+                    break;
+                case "*":
+                    result = multiply(num1, num2);
+                    break;
+                case "/":
+                    result = divide(num1, num2);
+                    break;
+                default:
+                    console.log("Invalid operator");
+                    return;
+            }
+
+            document.write(`Result: ${result}`);
+        }
+
+        // Call the calculator function
+        calculator();
+
+    </script>
+</body>
+
+</html>

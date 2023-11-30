@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //How To find max/min in a given array in javascript
+        
+        //1st method= Math.max Math.min and spread operator
+        const number = [5, 7, 12, 34, 76, 23,300];
+
+        const max = Math.max(...number);
+        const min = Math.min(...number);
+
+        document.write(max + "<br>"); //76
+        document.write(min);  //5
+
+        //2nd method  = reduce and ternary operator
+        
+        //const max = number.reduce((acc, cur) => cur > acc ? cur : acc);
+        //const min = number.reduce((acc, cur) => cur < acc ? cur : acc);
+
+
+    </script>
+</body>
+
+</html>

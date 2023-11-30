@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //How to find the sum of all elements in array in Javascript
+        //1st method reduce 
+
+        const numbers = [1, 2, 3, 4, 5];
+        const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        console.log(sum); // Output: 15
+
+        //2nd
+        /*
+        const numbers = [1, 2, 3, 4, 5];
+        let sum = 0;
+
+        numbers.forEach((num) => {
+            sum += num;
+        });
+
+        console.log(sum); // Output: 15
+        */
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //How To find second Largest value in array
+        // 1st method :- sort method (b-a)
+        const numbers = [5, 2, 9, 1, 7];
+
+        numbers.sort((a, b) => b - a);
+        const secondLargest = numbers[1];
+
+        document.write(secondLargest); // Output: 7
+
+
+
+        //2nd method
+        /*
+        const numbers = [5, 2, 9, 1, 7];
+
+        // Find and remove the largest element
+        const max = Math.max(...numbers);
+        const maxIndex = numbers.indexOf(max);
+        numbers.splice(maxIndex, 1);
+
+        // Find the second-largest element
+        const secondLargest = Math.max(...numbers);
+
+        console.log(secondLargest); // Output: 7
+
+        */
+    </script>
+</body>
+
+</html>

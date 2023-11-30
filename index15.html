@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //how to swap two variables without using the third
+
+        //1st method using destructuring assignment
+        
+                let a = prompt("Enter a number");
+                let b = prompt("Enter b number");
+        
+                document.write(`Before swapping ${a} and ${b}` + "<br>");
+        
+                [a, b] = [b, a];
+        
+                document.write(`After swapping ${a} and ${b}`);
+        
+
+
+        //2nd method  Using Addition and Subtraction:
+        
+        
+        /*
+
+        let a = prompt("Enter a number");
+        let b = prompt("Enter b number");
+
+        document.write(`Before swapping ${a} and ${b}` + "<br>");
+
+        a = parseInt(a);
+        b = parseInt(b);
+
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        document.write(`After swapping ${a} and ${b}`);
+        
+        */
+        
+        
+        //3rd method  Using Bitwise XOR
+        
+        
+        /*
+        let a = prompt("Enter a number");
+        let b = prompt("Enter b number");
+
+        document.write(`Before swapping ${a} and ${b}` + "<br>");
+
+        a = a ^ b;
+        b = a ^ b;
+        a = a ^ b;
+
+        document.write(`After swapping ${a} and ${b}`);
+
+        */
+
+    </script>
+</body>
+
+</html>

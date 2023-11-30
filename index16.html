@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //how to merged two arrays in javascript
+        //using spread operator
+        const array1 = [3, 4, 5, 6];
+        const array2 = ["het", "raj", "yash", "jay"];
+
+        const combined = [...array1, ...array2];
+        document.write(combined + "<br>");
+
+        //using concat method
+        const a = [1, 2, 3, 4, 5];
+        const b = [10, 12, 15, 20];
+        const c = a.concat(b);
+        document.write(c);
+    </script>
+</body>
+
+</html>
